@@ -40,7 +40,7 @@ task-manager-api/
 │── routes/
 │── .env
 │── server.js
-
+```
 
 ---
 
@@ -51,39 +51,45 @@ task-manager-api/
 ```bash
 git clone https://github.com/your-username/task-manager-api.git
 cd task-manager-api
-
+```
 
 ### 2. Install dependencies
 ```bash
 npm install
+```
 
 ### 3. Create .env file
 ```bash
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
+```
 
 ### 4. Run the server
 ```bash 
 npm run dev
+```
 
 ## 📬 API Endpoints
 
 ### 👤 Auth Routes
+```bash
 | Method | Endpoint | Description |
 |--------|---------|-------------|
 | POST | /api/users/register | Register user |
 | POST | /api/users/login | Login user |
+```
 
 ---
 
 ### 📋 Task Routes (Protected)
+```bash
 | Method | Endpoint | Description |
 |--------|---------|-------------|
 | GET | /api/tasks | Get all tasks |
 | POST | /api/tasks | Create task |
 | PUT | /api/tasks/:id | Update task |
 | DELETE | /api/tasks/:id | Delete task |
-
+```
 ---
 
 ## 🔐 Authentication
@@ -91,6 +97,7 @@ Use **Bearer Token** in headers:
 
 ```bash
 Authorization: Bearer YOUR_TOKEN
+```
 
 ### 🧪 Sample Payloads
 ### Register
@@ -100,6 +107,7 @@ Authorization: Bearer YOUR_TOKEN
   "email": "jeet@gmail.com",
   "password": "123456"
 }
+```
 
 ### Create Task
 ```bash 
@@ -109,6 +117,7 @@ Authorization: Bearer YOUR_TOKEN
   "status": "pending",
   "deadline": "2026-06-01"
 }
+```
 
 ### 🚀 Deployment
 - This project is deployed on Render with MongoDB Atlas as the database.
