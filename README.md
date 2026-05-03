@@ -30,6 +30,8 @@ A scalable **RESTful Task Management API** built using **Node.js, Express.js, an
 ---
 
 ## 📁 Project Structure
+
+```bash
 task-manager-api/
 │── config/
 │── controllers/
